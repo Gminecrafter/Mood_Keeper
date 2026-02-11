@@ -20,7 +20,7 @@ total = 0
 print("=====MOOD TRACKER====")
 print("by Gminecrafter487")
 while True:
-    option = int(input("Choose:\n1. Log mood\n2. Check stats\nChoose one: "))
+    option = int(input("Choose:\n1. Log mood\n2. Check stats\n3. Show past moods\nChoose one: "))
     if option == 1 or option == 2:
         break
 if option == 1:
@@ -118,11 +118,17 @@ elif option == 2:
     print(f"You were happy on {happy} out of {total}.")
     print("")
     input("Press enter to exit")
+elif option == 3:
+    with open("moods.txt", "r") as f:
+        print(f"Past moods:\n{f.read()}")
+    print("")
+    input("Press enter to exit")
 exit()
-            
+                                
         
 
     
 
 
     
+
