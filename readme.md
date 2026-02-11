@@ -66,8 +66,12 @@ python mood\_keeper.py
 mood\_keeper/
 
 │
+
 ├── mood\_keeper.py
+
 ├── requirements.txt
+
 └── README.md
+
 
 
